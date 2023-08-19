@@ -12,13 +12,13 @@ public class Parada implements Comparable<Parada>{
 		return this.km;
 	}
 
-	//Compara duas requisicoes pelo tempo de finalizacao
+	//Compara duas paradas pela distancia.
 	@Override public int compareTo(Parada parada) {
 		return parada.km - this.km;
 	}
 	
 	@Override public String toString(){
-		return "[" + name + "km:" + km + " ]";
+		return "[" + name + " | km:" + km + " ]";
 	}
 
 }
